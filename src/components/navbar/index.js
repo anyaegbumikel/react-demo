@@ -13,13 +13,17 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
+// List of Nav bar items
 const pages = ['Zita', 'Oma', 'Blog'];
+
+// Menu drop down 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
+    // States
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-
+     // Open handler
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
